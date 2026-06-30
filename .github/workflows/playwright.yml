@@ -21,6 +21,7 @@ jobs:
       run: npm run parallelTest
     - name: Run USPS Test
       run: npm run uspsMouseHoverTestHeadless
+    
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:

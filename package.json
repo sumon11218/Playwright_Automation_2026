@@ -8,15 +8,18 @@
     "uspsMouseHoverTest": "npx playwright test src/test/Day2_062226/T1_USPS_MouseHover.spec.ts --headed --workers=1 --project=chrome --reporter=html",
     "uspsMouseHoverTestHeadless": "npx playwright test src/test/Day2_062226/T1_USPS_MouseHover.spec.ts --workers=1 --project=chrome --reporter=html",
     "bingLoop": "npx playwright test src/test/Day2_062226/T2_BingSearch_Loop.spec.ts --headed --workers=1 --project=chrome --reporter=html",
-    "parallelTest": "npx playwright test src/test/Day2_062226/.* --workers=2 --project=chrome --reporter=html"
-    
+    "parallelTest": "npx playwright test src/test/Day2_062226/.* --workers=2 --project=chrome --reporter=html",
+    "pw": "npx -y node@22 ./node_modules/@playwright/test/cli.js",
+    "bingReusableTest": "npm run pw -- test src/test/Day4_063026/BingSearch_ReusableConcept.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "sadasRepor": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.61.0",
-    "@types/node": "^25.9.3"
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^22.8.2"
   }
+  
 }
